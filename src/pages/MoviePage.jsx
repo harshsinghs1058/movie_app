@@ -8,8 +8,15 @@ async function getData(movieId) {
   );
   return res.data;
 }
+async function getClips(movieId) {
+  const res = await axios.get(
+    `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${process.env.REACT_APP_API_KEY}`
+  );
+  return res.data.results;
+}
 function MoviePage() {
   const [data, setData] = useState("loading");
+  const [clips, setClips] = useState([]);
   const navigate = useNavigate();
   const { movieId } = useParams();
   useEffect(() => {
@@ -17,6 +24,15 @@ function MoviePage() {
       .then((res) => {
         setData(res);
         window.scroll({ top: 370, behavior: "smooth" });
+      })
+      .catch((err) => {
+        alert(err);
+        navigate("/", { replace: true });
+      });
+    getClips(movieId)
+      .then((res) => {
+        setClips(res);
+        console.log(res);
       })
       .catch((err) => {
         alert(err);
@@ -32,7 +48,7 @@ function MoviePage() {
     );
   } else {
     return (
-      <div className=' bg-gray-700'>
+      <div className=' bg-gray-700 text-white'>
         <img
           src={"https://image.tmdb.org/t/p/original/" + data.backdrop_path}
           alt='backdrop'
@@ -40,7 +56,7 @@ function MoviePage() {
         />
 
         <div
-          className='-translate-y-[50%] h-[576px] flex  flex-shrink-0 ml-[100px]'
+          className='absolute bottom-[-288px] h-[576px] flex  flex-shrink-0 ml-[100px]'
           id='poster'
         >
           <img
@@ -52,6 +68,30 @@ function MoviePage() {
             {data.title}
           </h1>
         </div>
+        <div className='mx-[100px] mt-[328px] font-bold text-4xl'>
+          Clips & Trailers
+          <div className='flex overflow-scroll scrollbar-hide snap-x mt-10'>
+            {clips.map((clip) => {
+              return clip.site === "YouTube" ? (
+                <div
+                  key={clip.id}
+                  className='snap-center h-[300px] aspect-video flex-shrink-0 mx-2 relative cursor-pointer rounded-xl'
+                  onClick={() =>
+                    window.open(`https://youtube.com/watch?v=${clip.key}`)
+                  }
+                >
+                  <img
+                    className='object-cover h-[300px] aspect-video rounded-xl absolute'
+                    src={`https://img.youtube.com/vi/${clip.key}/hqdefault.jpg
+                                `}
+                    alt='Thumbnail'
+                  />
+                </div>
+              ) : null;
+            })}
+          </div>
+        </div>
+        <p className=' mx-[100px] text-xl '>{data.overview}</p>
       </div>
     );
   }

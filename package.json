@@ -2,6 +2,12 @@
   "name": "movie_app",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Harsh",
+    "email": "Harshsinghs1058@gmail.com",
+    "url": "https://www.github.com/harshsinghs1058"
+  },
+  "license": "MIT",
   "homepage": "https://harshsinghs1058.github.io/movie_app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -13,6 +19,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "tailwind-scrollbar-hide": "^1.1.6",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
