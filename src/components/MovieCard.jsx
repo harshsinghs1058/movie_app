@@ -7,7 +7,7 @@ function MovieCard({ movie }) {
     <Link to={`/movie/${movie.id}`}>
       <div className='w-[min(21rem,90%)] bg-black rounded-xl text-white p-3 m-5 flex flex-col text-xl  hover:scale-110 relative cursor-pointer '>
         {movie.adult && (
-          <div className='text-red-700 text-xl font-bold w-10 h-10 bg-green-600 rounded-full absolute top-[75%] left-10 flex justify-center items-center text-center'>
+          <div className='text-red-700 font-bold w-10 h-10 bg-green-600 rounded-full absolute top-[75%] left-10 flex justify-center items-center text-center'>
             18+
           </div>
         )}
