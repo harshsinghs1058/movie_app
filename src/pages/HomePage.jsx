@@ -39,14 +39,14 @@ function HomePage() {
     );
   }
   return (
-    <div className='h-full pb-10 flex flex-col items-center min-h-screen bg-gray-700'>
+    <div className='pb-10 flex flex-col items-center bg-gray-700'>
       <NavBar />
       <div className='flex flex-wrap justify-evenly'>
         {data.map((movie) => {
           return <MovieCard key={movie.id} movie={movie} />;
         })}
       </div>
-      <div className='mt-5 font-bold w-[250px] text-xl'>
+      <div className='mt-5 font-bold text-xl'>
         <button
           className='bg-white rounded-full px-4 py-2 mr-2 hover:border-black hover:border-2 hover:font-bold'
           onClick={() => {
