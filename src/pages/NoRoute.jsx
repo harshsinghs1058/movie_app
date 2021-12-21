@@ -1,10 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function NoRoute() {
   const navigate = useNavigate();
   const [time, setTime] = useState(5);
   setTimeout(() => {
-    console.log(time);
     setTime(time - 1);
     if (time === 0) {
       clearTimeout();
