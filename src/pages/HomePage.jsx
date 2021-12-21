@@ -1,5 +1,5 @@
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
 import NavBar from "../components/NavBar";
 import loading_spinner from "./../assets/loading_spinner.gif";
