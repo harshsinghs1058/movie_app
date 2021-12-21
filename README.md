@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Movie Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Live Link - [Click Me](https://harshsinghs1058.github.io/movie_app/#/)
 
-## Available Scripts
+### Tech Stacks Used
 
-In the project directory, you can run:
+- React.js
+- Tailwindcss @3.0.0
 
-### `npm start`
+### Tools Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- axios
+- react-router-dom
+- TMDB Api
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Demo Video
 
-### `npm test`
+- Coming Soon
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How to Run
 
-### `npm run build`
+##### - Install Packages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`yarn`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### - Api key
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- create .env file
+- add your TMDB api key in this file with name of REACT_APP_API_KEY
 
-### `npm run eject`
+##### - Start App
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`yarn start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Home Page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  ![s1](demos/s1.jpg)
 
-## Learn More
+- Movie Details Page
+  ![s2](demos/s2.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 404 Route Not Found
+  ![s4](demos/s4.jpg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Movie Page (Mobile)
 
-### Code Splitting
+![s3](demos/s3.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Full Home Page
+  ![s5](demos/s5.jpg)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Full Movie Page
+  ![s6](demos/s6.jpg)
