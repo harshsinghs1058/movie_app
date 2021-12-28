@@ -46,7 +46,7 @@ https://user-images.githubusercontent.com/69311741/146940211-9498cce9-4ace-4dd3-
 
 - Movie Page (Mobile)
 
-![s3](demos/s3.jpg)
+  ![s3](demos/s3.jpg)
 
 - Full Home Page
   ![s5](demos/s5.jpg)
