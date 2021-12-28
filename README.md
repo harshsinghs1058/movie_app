@@ -42,7 +42,7 @@ https://user-images.githubusercontent.com/69311741/146940211-9498cce9-4ace-4dd3-
   ![s2](demos/s2.jpg)
 
 - 404 Route Not Found
-  ![s4](demos/s4.jpg)
+  ![s4](demos/S4.jpg)
 
 - Movie Page (Mobile)
 
