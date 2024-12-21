@@ -45,9 +45,7 @@ function NavBar() {
           <div className='group'>
             <li
               className='list-none py-2 px-4 rounded-full group-hover:bg-gray-300 group-hover:animate-bounce group-hover:text-black'
-              onClick={() => {
-                //navigate to route
-              }}
+              onClick={() => {}}
             >
               Now Playing
             </li>
